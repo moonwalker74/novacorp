@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ENGL 502 - Final Project - Nova Corp</title>
+	  <link rel="stylesheet" href="style.css" type="text/css">
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Unica+One|Russo+One|VT323|Share+Tech+Mono" rel="stylesheet">
+	  
+  </head>
+  
+  <body>
+  
+  	<section id="page1">
+  <div class="title">
+    <h1 class="top"><span>Nova Corp</span></h1>
+    <h2 class="mid"><span>Click to play</span></h2>
+    <h1 class="bottom"><span>Nova Corp</span></h1>
+  </div>
+  
+  <p>What if you did not have to wonder what to eat for dinner tonight? What if you never had to choose what to listen to or what to watch ever again? What if you could experience again all of your memories? What if you could get updated to the cloud after your death? What if you could visit your deceased loved ones during your dreams? What if there was something that could make your life so much easier, like an app? But what if this app was implanted directly into your brain?</p>
+  <p>Thanks to Nova Corp. all of that is now possible. With the A.B.L.E. implant, the Assistant for Better Living Experience, you are connected to the internet every second of your life. Every morning the artificial intelligence calculate what food you need, what clothes you should wear and your plans for the day.</p>
+  <p>Welcome to the World of Sally Tate. Try to discover the truth by going her files, conversations, and emails.</p>
+  
+  <footer>
+    Final Project ENGL 502 — Marine Bernard © 2017 — This is still a beta version.
+  </footer> 
+</section>
+
+
+<section id="page2">
+  <div class="tempbg">
+    <div class="welcome">
+      <h1>Welcome, Sally Tate!</h1>
+      <h2>Thank you for plugging in today.</h2>
+
+      <h4>Nutrition</h4>
+<p>Today’s Food Intake: 1,634cals.<br/>
+Objective: 1,800cals.<br/>
+  Why don’t you try grabbing a <strong>snack</strong>? A all-in-one protein bar from
+  Nova Corp might be a good idea!</p>
+
+<h4>Entertainement</h4>
+<p>Do you want me to put on some music for you?<br/>
+Based on the latest hits of the month, I would recommend to listen to:<br/>
+  <strong><i>“Please, come see me in DreamCast”</i> by <u>The Haunted Clarinets</u></strong></p>
+
+<h4>Life Track</h4>
+<p>During your last ability test you have been selected
+to join Law Enforcement after you 18th birthday.<br/>
+To appeal that decision, please request an audience the director of your training institution.<br/>
+Training development: On track.<br/>
+Your first internship at the Government Crime Management Agency will finish in:<br/>
+  <strong>85 days.</strong></p>
+      
+      <button class="closewelcome">Dismiss?</button>
+    </div>
+  </div>
+  
+  <div class="taskmanager">
+    <h4>What to do next?</h4>
+    <label class="container" id="task-1">Go through all the files.
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container hidden" id="task-2">Read all the emails.
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container hidden" id="task-3">Finish the conversation.
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+    <button>Next ></button>
+  </div>
+  
+  <div id="window1" class="window one">
+    <div class="topbar"><span class="close">
+      <i class="fa fa-window-minimize" aria-hidden="true"></i>    
+      <i class="fa fa-window-restore" aria-hidden="true"></i>    
+      <i class="fa fa-close" aria-hidden="false"></i></span></div>
+    <table id="files">
+      <colgroup>
+        <col style="width:50%">
+        <col style="width:15%">
+        <col style="width:35%">
+      </colgroup> 
+      <tr>
+        <td>Name</td>
+        <td>Size</td>
+        <td>Created on</td>
+      </tr>
+      <tr>
+        <td id="file1" class="file"><i class="fa fa-file-text-o" aria-hidden="true"></i> log1.txt</td>
+        <td>22Kb</td>
+        <td>05.20.2065 at 11:59pm</td>
+      </tr>
+      <tr>
+        <td id="file2" class="file"><i class="fa fa-file-text-o" aria-hidden="true"></i> file2.txt</td>
+        <td>42Kb</td>
+        <td>05.21.2065 at 07:23pm</td>
+      </tr>
+      <tr>
+        <td id="file3" class="file"><i class="fa fa-file-text-o" aria-hidden="true"></i> memoryfile342.txt</td>
+        <td>81Kb</td>
+        <td>05.18.2065 at 10:07am</td>
+      </tr>
+      <tr>
+        <td id="file4" class="file"><i class="fa fa-file-text-o" aria-hidden="true"></i> file4.txt</td>
+        <td>358Kb</td>
+        <td>05.23.2064 at 01:48am</td>
+      </tr>
+      <tr>
+        <td id="file5" class="file"><i class="fa fa-file-text-o" aria-hidden="true"></i> file5.txt</td>
+        <td>42Mb</td>
+        <td>05.23.2065 at 11:33am</td>
+      </tr>
+    </table>
+    <img class="glitch hidden" src="https://media.giphy.com/media/l3uaGs8R8FlcI/giphy.gif" />
+  </div>
+  
+  <div id="openedfile1" class="window hidden openedfile">
+    <div class="topbar"><span class="close">
+      <i class="fa fa-window-minimize" aria-hidden="true"></i>    
+      <i class="fa fa-window-restore" aria-hidden="true"></i>    
+      <i class="fa fa-close" aria-hidden="false"></i></span></div>
+    
+    <p><strong>Log #1</strong><br/>
+	<span>OK, so .. I don't know how to do this. People used to do logging a few years ago when the memory rewatch was still a pretty pricey feature. Now nobody does because with one command you can rewatch your days as much as you want. But ever since I took the Life Placement Test, there seems to be a conflict with my custom version of A.B.L.E. The memory files of my last few days are getting encrypted and when they actually are readable there seems to be things happening that I distinctly remember not happening. God, that doesn't make sense. So I am back to the old days, logging everything I do, until I can figure out how to solve that problem. Good thing Mom always kept this computer off the Nova Network, wouldn't want them to find out about my dreams.</span>
+	<span>I can not wait to find out where they placed me. Not that I am super excited about having to work in the same field my whole life, but there is this curiosity .. Will they realize that my implant is hacked and therefore not pure? Am I gonna wake up tomorrow to a hoard of Sentinels waiting to take me to a Latent Criminal Facility?  I need to have more faith in me. I am hell of a good hacker, no way they can found anything I didn't want them to find. </span>
+	<span>Dad hasn't been out of DreamCast for the last two weeks now. I don't know if he's just hanging out with Mom or if he is just working over time. Not like it matters anyway.. He doesn't seem to remember that he has a daughter most of the time. I wonder if he might disconnect for the announcement of my placement but I think it's too much to hope for. They get personalized news up there too, he'll found out. I hope I don't end up up there too. I can <u>not</u> spend my days hanging out with dead people and dreaming people. Nuh-uh, I need some real human contact — says the girl who has no real life friend and spend all of her time on the old net. </span> 
+	<span>I really wanna go to sleep .. I still have that order from that creepy J.R. guy .. God that guy must never leave his apartment. Actually it might even be a basement, that would fit. Every month or so he asks for a new fake computer generated "female friend" and boy .. He is graphic in his description! I kinda want to troll him with bugs in her AI but he is one of my most frequent customer and best tipper that I have. </span></p>
+  </div>
+  
+  <div id="openedfile2" class="window hidden openedfile">
+    <div class="topbar"><span class="close">
+      <i class="fa fa-window-minimize" aria-hidden="true"></i>    
+      <i class="fa fa-window-restore" aria-hidden="true"></i>    
+      <i class="fa fa-close" aria-hidden="false"></i></span></div>
+    
+    content
+  </div> <!-- after placement -->
+  
+  <div id="openedfile3" class="window hidden openedfile">
+    <div class="topbar"><span class="close">
+      <i class="fa fa-window-minimize" aria-hidden="true"></i>    
+      <i class="fa fa-window-restore" aria-hidden="true"></i>    
+      <i class="fa fa-close" aria-hidden="false"></i></span></div>
+    
+    <p style="word-break: break-all;">1&quot;AQa2B&oacute;&sum;8X#&rsquo;&part;Wwx&yuml;q&Aring;&euml;b3CS&igrave;&icirc;&divide;'9!1AQ&quot;aq&Aring;&euml;&deg;2t&mdash;Br&le;&ldquo;#&ge;5u6b&Ccedil;&cent;s&igrave;4T&yen;U&plusmn;R3S$&icirc;7ˇ&frasl;?&Ucirc;ˇm&loz;Hz=&yuml;!\˝&AElig;u&ordf;&uml;&frasl;&ugrave;&szlig;&euml;6&lt;&eacute;^&micro;L&ucirc;B&ntilde;\&loz;5&Iuml;=)ke&circ;=&otilde;;q,&divide;&yuml;&uml;M&Ouml;9&Acirc;&Ntilde;f&ouml;T&acute;Vy)R&ntilde;z&ge;&hellip;$B&ndash;v_d&Ocirc;|&acute;&Yuml;&frasl;&divide;&ordm;&Igrave;GU,.&Iacute;&ndash;&bull;R&Ecirc;&nbsp;2&Uacute;&ne;&loz;&ldquo;W&ucirc;HMVﬂ&Iacute;(&Egrave;&bull;_&permil;&oelig;&Agrave;&Ocirc;&oacute;&Uacute;&Otilde;&Egrave;&Icirc;}}&igrave;&Iacute;&Ntilde;&ge;F^&yuml;ıRy&deg;∆Y~G,K&Oacute;&egrave;&Iuml;C&rsaquo;'&ldquo;&dagger;&rsquo;&Oacute;k˚?&cedil;&infin;q&iuml;&ccedil;&circ;O@&igrave;&Ccedil;yﬁ&oelig;eV&Uacute;{M&euml;&szlig;&iquest;&Aacute;&AElig;&aelig;L#4&divide;&prod;&cedil;F&tilde;&agrave;&divide;&Acirc;&Omega;&ordf;&ouml;Y,&iacute;&loz;&Ntilde;&rdquo;&laquo;&middot;/&uml;~&ne;4w0u&Agrave;&euml;&circ;!&Aacute;n7&euro;&macr;&uuml;&igrave;uJ&Ugrave;&Euml;lN&Ocirc;&Uuml;&ordf;&iexcl;g&plusmn;&ge;V&szlig;&part;ı*Z]&hellip;$j&frasl;&lsaquo;&ldquo;&ouml;&ldquo;&ne;N3&mdash;&acute;/∆I&para;&aacute;&fnof;s&aring;∆d3Y,~gq&euml;&nbsp;&Acirc;&Oslash;&ne;1&ograve;&Atilde;}&ugrave;)&acute;&rsaquo;ﬂd/&Oacute;)&frasl;&Yuml;Y&frasl;&iacute;&ucirc;&micro;&asymp;&rsquo;&Otilde;Yd&iacute;XB1&ouml;i&deg;&Yuml;]˚9&iuml;&Uacute;&Ocirc;bw&eacute;Eﬂ&macr;&Oslash;yL&rsaquo;&ne;&ntilde;B&oelig;@ﬂs;V{n&ge;&infin;&oslash;&ge;&bull;wJ9&Iacute;Zf&pi;&ograve;∆&middot;2T&deg;VV&ge;&copy;q5z!jBY&deg;,&Acirc;&ge;&raquo;&circ;&otilde;&reg;ds˙3ı&otilde;&ntilde;&circ;sU&sum;&ldquo;&infin;˘&Otilde;&rdquo;U&nbsp;e%&iacute;I&szlig;&ouml;&iuml;&eacute;Sm&rsquo;q&macr;9nf&circ;˙I-j&Ugrave;e&ouml;h&not;&ouml;&agrave;*S&oslash;&Euml;[&oacute;&Ocirc;;&Uacute;&amp;&pi;&iuml;&lsquo;7&Otilde;d&Atilde;&Iacute;;&Uuml;&ne;&uacute;&yen;&acute;c&oacute;&loz;&circ;=~˛&aelig;3/&acirc;&raquo;&frasl;V&Ntilde;&micro;(&rsaquo;Y_[O$&ndash;&egrave;&radic;&divide;&infin;&aring;aDT&Egrave;g&frasl;u&permil;&Eacute;&sum;|C&acute;&Ucirc;fw;&radic;˝s&lsquo;7&rsaquo;s&part;h&ograve;˛W&Agrave;&Iuml;W{~_&Otilde;&ldquo;&Ouml;&divide;7%y&ne;j8,&rsquo;&OElig;&ordf;B˙&not;zw4e&Omega;&ucirc;&iuml;j&icirc;*&hellip;?&le;&ouml;&lsaquo;_K&tilde;&szlig;˚&Yuml;ıSˇ&ccedil;&Agrave;?˝$&ucirc;&rsaquo;&circ;Xy&not;&sbquo;&Oacute;o5n&iexcl;ucs&raquo;&mdash;&szlig;&Igrave;&Ograve;&le;&lsaquo;&acirc;&Auml;&copy;wR˘R^&Acirc;&yen;&ograve;ZQ&aring;nx&not;&Ntilde;&eacute;&circ;xF&Uacute;C&bdquo;&ge;So&Iuml;W&permil;&deg;∆&icirc;aK&Iacute;yg&eacute;rV&ordm;&aacute;∆&macr;&Egrave;&Icirc;&lsquo;&ntilde;&ccedil;9&Otilde;&aacute;&igrave;k&iuml;&acute;T&ucirc;&hellip;.F&ccedil;&Oslash;&aelig;?&Omega;ı&bdquo;/&radic;&oelig;r&cedil;&ne;&Iuml;&ordf;v;&uml;˙ﬁ&sum;k&szlig;q&rsquo;∆&euro;&ecirc;˘C&OElig;G^&ldquo;u{&uacute;&Iuml;&Ucirc;∆&radic; &Ugrave;mo&Uacute;Y&uml;&Igrave;[:5.aegoV&sum;&raquo;&szlig;&Ecirc;&circ;&radic;&ldquo;1	˘ˇ&oslash;z&Omega;&uuml;U?&macr;&lsaquo;&ge;ˇ&ldquo;A&Ograve;ﬁ˝&igrave;&rsaquo;&Ugrave;&deg;F3&Yuml;&circ;&otilde;&trade;&oacute;ı&deg;	&Omega;(˙&bull;&Oslash;&int;0&ntilde;1&ntilde;6&AElig;&euml;a&Oacute;&otilde;&middot;˚&Auml;&eacute;&AElig;&mdash;}&AElig;\&int;&Otilde;&AElig;f&sum;J&lt;7&ne;s∆&bull;&Eacute;&Ouml;j&loz;&oacute;&uacute; &sum;[n[&ntilde;&Ugrave;&bdquo;Z&part;G&macr;&egrave;yk&Uuml;&euro;kZ&mdash;&pound;$&rdquo;&oelig;&Uacute;-k&Otilde;$&le;∆1&Ntilde;&gt;&Oslash; &rsaquo;&bull;ﬁ&gt;&Oacute;&Iacute;&not;˛&divide;&sbquo;&nbsp;˙&nbsp;&sbquo;&micro;&bull;&Igrave;&iuml;&rsaquo;&ntilde;&loz;v&oacute;v&rsquo;&amp;&pound;qkuoZY+[&lsaquo;[&divide;&iacute;2O$&Ntilde;&ldquo;M&not;0&Ntilde;` &rdquo;&Egrave;W&eacute;&eacute;&permil;˘ﬁ&bull;&ndash;˙&pound;&not;W$&rsaquo;P&copy;F&Otilde;&cent;Kxa&yen;N&Ouml;j&lsquo;&Euml;B&Ucirc;jﬁ2&mdash;&micro;&loz;p&yen;$&copy;V_Yg&Oslash;&rdquo;B?&ntilde;I&Aring;g&AElig;&quot;˚'˚&euml;&le;&middot;qY^d&Igrave;gq~J&Oacute;&uuml;'&acute;k&ograve;-&radic;&euml;2&pi;c&macr;&mdash;&uuml;/$&ouml;&divide;&sbquo;&sbquo;ˇ&ldquo;&ouml;&bull;?O&middot;&lt;&rsaquo;˛&raquo;&eacute;&asymp;Z[\&loz;&bdquo;&AElig;&Ocirc;p&divide;v&Ecirc;&iuml;&ne;Z&ntilde;&divide;wn&ouml;&lsaquo;.&Oacute;&bull;&Ntilde;cJﬁk&cedil;M˛&laquo;%&uml;&iuml;}==&Ograve;&pound;?&part;1&macr;&radic;&rdquo;&sbquo; &cedil;w&egrave;&iquest;ﬂ&igrave;n&Auml;c/v&OElig;f&Icirc;&Ecirc;Se&bdquo;&pound;ı&Oslash;&fnof;7rr^&egrave;cFjˇ&quot;ﬁ&part;r&Aacute;J|&aelig;&ge;&egrave;∆&reg;Z[B&cedil;c˚ &aacute;Pz˚!&Iuml;&Igrave;jv&szlig;&ordf;&loz;&Ucirc;&euro;&mdash;&ucirc;&circ;&loz;&Oslash;&cedil;}kmu4&iacute;∆&Omega;{ﬁE&ne;V&Oacute;&ccedil;*&euml;&aacute;&int;Jw5,h∆xC&tilde;&mdash;&szlig;/&Oslash;&Dagger; &Oacute;7&euml;n&Oacute;h=&le;&Iuml;&para;&euml;&szlig;v;&ecirc;5˝OQ&Aacute;.Q&divide;ı&uml;&ccedil;lL,&infin;&macr;&lt;6&Acirc;&ograve;&laquo;&sbquo;&Ograve;&part;&ecirc;&acute;&atilde;&copy;R&circ;Vt$&szlig;'&int;i&pound;&Igrave;&ntilde;&plusmn;&atilde;d~&uuml;˙I&Egrave;&oslash;)&yuml;&ordm;?%&raquo;q\&ordf;&Igrave;&laquo;&part;&hellip;&iacute;&circ;&atilde;k{ﬂ-kN&ntilde;&Ucirc;&ocirc;&ocirc;&ocirc;Vn&sbquo;&Oacute;˛&Ecirc;&frasl;&Ucirc;&euro;&rsaquo;&part;ﬂy&ouml;&ograve;1&Oacute;&le;&divide;&micro;&ccedil;4&auml;&asymp;&Ecirc;&quot;#&radic;&Yuml; n&aacute;&icirc;O &aring;#˝iy+&middot;_&ccedil;|,aˇ\#&aacute;&aring;#_ˇe}+ˇ&cent;lˇ%ˇ&ntilde;&Ograve;ˇ&aelig;˝&Yuml;ˇ&otilde;&Ucirc;~&bdquo;&sum;8&oelig;&Atilde;&tilde;&ecirc;.&lt;&Otilde;&yuml;&permil;2\&oslash;i&hellip;xkz&Uacute;T&Omega;&rsquo;yO&rsquo;r&lsaquo;&ugrave;(M&oelig;F&part;_&acirc;&iexcl;m&part;&ucirc;&Egrave;=a&euro;&permil;izF&gt;&plusmn;&Ntilde;}=3&macr;x&Ugrave;&Oslash;&ntilde;&euro;[&gt;&euro;=&fnof;&laquo;&Uuml;\r&divide;&rsquo;&uuml;|V&circ;&aelig;)ˇ;&ordf;˚/Q˚&ge;i&iacute;/}&fnof;f&laquo;&bdquo;\&icirc;&uml;&fnof;˝&plusmn;&ordm;}&ntilde;&Uuml;˘˘&Icirc;]&aelig;&Dagger;&oelig;&ordf;&oelig;:q˛&aacute;a&szlig;wO&Oslash;Z&divide;&radic;&icirc;&lsquo;+&euro;&hellip;&egrave;&acute;&part;c&tilde;GWf&ordm;&middot;&cedil;&OElig;v4l+l&lsaquo;o&hellip;&Euml;&oelig;M&asymp;d&part;w&micro;&Acirc;&ne;,&yen;&Icirc;Q&ordm;&deg;=ı3&rdquo;&aelig;O&rdquo;^&bdquo;&sum;&aelig;&yen;f&frasl;d&szlig;&Atilde;&iexcl;&ouml;#H&Agrave;&eacute;fcY&ccedil;g&para;ı&ograve;&ouml;ﬁ&int;&OElig;&igrave;&sect;&fnof;&Otilde;mY&ocirc;ˇ&micro;˚&igrave;k&lsaquo;&cedil;do&infin;GFj&oelig;NJL&Icirc;5&part;&ouml;˘˚k1&bdquo;Y&circ;˘y&fnof;&fnof;R&Igrave;&divide;&Iacute;M&gt;ﬂ˘f&Icirc;&szlig;&ograve;&asymp;&ndash;&nbsp;&Egrave;[&ucirc;&ordf;&Aacute;&ccedil;&circ;ﬁ˙&frasl;&micro;|ulP&Uuml;wayR&Otilde;,&ecirc;&nbsp;&Igrave;0&laquo;&euro;I &bdquo;	f&ouml;&szlig;&szlig;&trade;;dk&divide;y&deg;&Uacute;&OElig;&cedil;?&Yuml;-[&Ouml;&int;&tilde;&nbsp;˚&euro;&Euml;&cedil;c&ntilde;&permil; &micro;&pi;&Iuml;)&divide;&raquo;m{&bull;&fnof;&Yuml;KvG&Iacute;&uml;&Oacute;&Ecirc;&ouml;\N&copy;k&egrave;&pi;&deg;&Egrave;}?R&uuml;&middot;&macr;F7S&Ocirc;&Egrave;Gls˝&uuml;&uuml;&prod;&ordf;&Oslash;c&atilde;w}&OElig;&Iacute;&rsquo;&iexcl;&Ucirc;:&yen;&AElig;,1&rdquo;kWI&egrave;&ldquo;&Agrave;7&uml;ˇ&acute;&Ntilde;!&Iacute;?v&Uacute;&uacute;3&egrave;&ccedil;&sbquo;sﬂb&asymp;&igrave;&szlig;O^u&agrave;&ugrave;b|&acute;&ograve;˛&yen;&rdquo;&cent;R&ordf;S˝n87&OElig;&Ocirc;&sum;n&lsaquo;[&part;&Oacute;&ntilde;z6&rsquo;&Eacute;&yuml;&trade;&sbquo;&bdquo;&auml;&ntilde;M&divide;&ccedil;}c&ograve;&prod;&acute;CmV&frasl;M`&nbsp;Z_MR&not;&szlig;o4&amp;ı&ntilde;1&Ccedil;Bı;&mdash;&gt;&raquo;˛&middot;&Uacute;y˚k&aring;&euro;&Igrave;&pi;&ordm;i&Otilde;&auml;&macr;˙&int;&oslash;&ocirc;&ograve;&hellip;zDM&para;'&AElig;&iuml;&micro;&quot;4&Ucirc;&yen;i&sbquo;&laquo;;[&aelig;9ﬂ&euro;˚\|&ucirc;&Icirc;&amp;]&eacute;L&euml;KV&frasl;i&Ograve;&cedil;1&gt;Q&szlig;M&para;-&circ; w&Oacute;&ndash;&Iacute;&ordm;&Acirc;&uuml;&Otilde;X&lsaquo;EZ:7q&yen;&ugrave;#&ecirc;j\&lsquo;&ucirc;&aring;&divide;&lt;&acirc;&sect;&lsaquo;Xq&sum;&quot;&sbquo;&Igrave;hS&ntilde;Y&Egrave;{qX&uml;F&bdquo;ﬂ&Icirc;&Icirc;e&Ecirc;&otilde;&divide;&gt;&plusmn;&Ntilde;5&ldquo;&le;K&trade;yV&Aacute;n]&Icirc;?E&int;&micro;&ucirc;&Dagger;m&Ocirc;5∆{&rsaquo;&egrave;&ccedil;ıK&acute;&Igrave;j6&icirc;j&divide;&loz;$&middot;&Igrave;&eacute;&circ;LDe&int;&part;&int;&szlig;-&uacute;&sum;X&ordf;y&middot;K&not;4&bull;&macr;˙,7&middot;&radic;&micro;{{&ordf;{&sum;{&plusmn;&Oacute;=&para;-ﬁ&rdquo;l&iuml;&ne;ı&ldquo;/&infin;&loz;&trade;4&ograve;&Ograve;&Egrave;&yen;&laquo;&frasl;&eacute;}K&Acirc;&pi;#&aacute;&iexcl;&uuml;&aring;&Otilde;|9&ne;&pi;&auml;&Atilde;&loz;Mf:/:x&fnof;˚b%]_˘&cent;y˛&Ugrave;&ordm;&oacute;ˇ&oslash;&Uuml;ˇ4.g˝&ntilde;&Ugrave;&ge;˛&acirc;&ge;&cedil;&oacute;˛Z˛˚&tilde;g&cedil;vo&Otilde;˚&eacute;C&Acirc;_&raquo;N.&ordm;&oacute;6&rsaquo;&deg;ﬁ&Iacute;&lsquo;&szlig;7&int;Yr6&eacute;b&Ntilde;c&macr;Ok&ntilde;&divide;&Ocirc;&ne;j&Agrave;&cedil;&amp;&iacute;0˝&laquo;_C˝)&Otilde;Y&bull;&macr;]&uml;Dˇ&Acirc;&part;ZO&Acirc;&AElig;H&ograve;˚%&tilde;N˙&Oacute;&lsaquo;s&rsquo;]&circ;]~&ograve;&sect;˛i&uml;&not;_: &Ecirc;#&yuml;]&para;&Agrave;&trade;}&Aacute;&loz;tm&loz;&Atilde;&Aacute;&ndash;&plusmn;[&Acirc;}oe&agrave;&oelig;&permil;&part;q∆&ndash;&rdquo;y;N&iacute;ﬁ:&ne;˛/n&acute;q*76&ntilde;&part;&icirc;i\U&szlig;N&Omega;&ordm;&Ugrave;&Iacute;&oelig;qB&ordm;˙&oslash;&macr;s&bdquo;xn?tv'&Otilde;&AElig;-&micro;'&amp;m&ne;&Igrave;9#&Acirc;W∆&tilde;&radic;{k}q&laquo;&asymp;j^&loz;&otilde;V&amp;kh&ograve;&auml;&frasl;F&Iuml;&Ocirc;Rw;&rsaquo;&Oacute;&gt;+&uuml;&Euml;&otilde;e&ograve;&ne;2&fnof;E~)&Uacute;&ne;&Icirc;&asymp;&gt;j&fnof;i:D∆&igrave;&uml;I/F&lt;tqG&atilde;&AElig;,&Oacute;.&ccedil;&loz;&nbsp;_&pound;&Egrave;&igrave;&hellip;[&oslash;&lt;&Egrave;&ndash;&Ouml;Z&pi;=3&ouml;&mdash;,m1&frasl;5L&iuml;&oelig;&Atilde;&copy;&euml;&plusmn;&ldquo;3&yuml;;&Egrave;qsO5J&icirc;&Ograve;&micro;&reg;KVi&Iacute;&not;&sect;&rdquo;T~+&lt;&lsaquo;&ucirc;&euro;X&atilde;b&aelig;|u&ograve;&uuml;lM&sbquo;&amp;&gt;&yuml;L&ordf;Z&otilde;\&sum;&sect;&Egrave;h&laquo;i&acirc;˙b%T&Ocirc;˘&cent;y˛&Ugrave;&ordm;&oacute;ˇ&oslash;&Uuml;ˇ46&aacute;ˇe&Omega;,ˇ&cent;lˇ%ˇ&ntilde;&trade;ﬂﬂ~&Iuml;ˇ&eacute;&Otilde;˘&oslash;q˙R&Uacute;&igrave;&permil;&aring;ﬁ˘;I&raquo;&mdash;&egrave;&Igrave;U&eacute;&ordm;&oslash;&not;?&ordm;&Oslash;&Ntilde;&copy;'&bdquo;&frasl;|&euro;&mdash;OJ&Igrave;O&yen;˚:&bdquo;ˇ&Ecirc;#&yuml;]&para;&Agrave;&trade;}&Aacute;&loz;tm&loz;&Atilde;&Aacute;&ndash;&plusmn;[&Acirc;}oe&agrave;&oelig;&permil;&part;q∆&ndash;&rdquo;y;N&iacute;ﬁ:&ne;˛/n&acute;q*76&ntilde;&part;&icirc;i\U&szlig;N&Omega;&ordm;&Ugrave;&Iacute;&oelig;qB&ordm;˙&oslash;&macr;s&bdquo;xn?tv'&Otilde;&AElig;-&micro;'&amp;m&ne;&Igrave;9#&Acirc;W∆&tilde;&radic;{k}q&laquo;&asymp;j^&loz;&otilde;V&amp;kh&ograve;&auml;&frasl;F&Iuml;&Ocirc;Rw;&rsaquo;&Oacute;&gt;+&uuml;&Euml;&otilde;e&ograve;&ne;2&fnof;E~)&Uacute;&ne;&Icirc;&asymp;&gt;j&fnof;i:D∆&igrave;&uml;I/F&lt;tqG&atilde;&AElig;,&Oacute;.&ccedil;&loz;&nbsp;_&pound;&Egrave;&igrave;&hellip;[&oslash;&lt;&Egrave;&ndash;&Ouml;Z&pi;=3&ouml;&mdash;,m1&frasl;5L&iuml;&oelig;&Atilde;&copy;&euml;&plusmn;&ldquo;3&yuml;;&Egrave;qsO5J&icirc;&Ograve;&micro;&reg;KVi&Iacute;&not;&sect;&rdquo;T~+&lt;&lsaquo;&ucirc;&euro;X&atilde;b&aelig;|u&ograve;&uuml;lM&sbquo;&amp;&gt;&yuml;L&ordf;Z&otilde;\&sum;&sect;&Egrave;h&laquo;i&acirc;˙b%T&Ocirc;˘&cent;y˛&Ugrave;&ordm;&oacute;ˇ&oslash;&Uuml;ˇ46&aacute;ˇe&Omega;,ˇ&cent;lˇ%ˇ&ntilde;&trade;ﬂﬂ~&Iuml;ˇ&eacute;&Otilde;˘&oslash;q˙R&Uacute;&igrave;&permil;&aring;ﬁ˘;I&raquo;&mdash;&egrave;&Igrave;U&eacute;&ordm;&oslash;&not;?&ordm;&Oslash;&Ntilde;&copy;'&bdquo;&frasl;|&euro;&mdash;OJ&Igrave;O	&yen;˚:&bdquo;ˇ &Ecirc;#&yuml;]&para;&Agrave;&trade;}&Aacute;&loz;tm&loz;&Atilde;&Aacute;&ndash;&plusmn;[&Acirc;}oe&agrave;&oelig;&permil;&part;q∆&ndash;&rdquo;y;N&iacute;ﬁ:&ne;˛/n&acute;q*76&ntilde;&part;&icirc;i\U&szlig;N&Omega;&ordm;&Ugrave;&Iacute;&oelig;qB&ordm;˙&oslash;&macr;s&bdquo;xn?tv'&Otilde;&AElig;-&micro;'&amp;m&ne;&Igrave;9#&Acirc;W∆&tilde;&radic;{k}q&laquo;&asymp;j^&loz;&otilde;V&amp;kh&ograve;&auml;&frasl;F&Iuml;&Ocirc;Rw;&rsaquo;&Oacute;&gt;+&uuml;&Euml;&otilde;e&ograve;&ne;2&fnof;E~)&Uacute;&ne;&Icirc;&asymp;&gt;j&fnof;i:D∆&igrave;&uml;I/F&lt;tqG&atilde;&AElig;,&Oacute;.&ccedil;&loz;&nbsp;_&pound;&Egrave;&igrave;&hellip;[&oslash;&lt;&Egrave;&ndash;&Ouml;Z&pi;=3&ouml;&mdash;,m1&frasl;5L&iuml;&oelig;&Atilde;&copy;&euml;&plusmn;&ldquo;3&yuml;;&Egrave;qsO5J&icirc;&Ograve;&micro;&reg;KVi&Iacute;&not;&sect;&rdquo;T~+&lt;&lsaquo;&ucirc;&euro;X&atilde;b&aelig;|u&ograve;&uuml;lM&sbquo;&amp;&gt;&yuml;L&ordf;Z&otilde;\&sum;&sect;&Egrave;h&laquo;i&acirc;˙b%T&Ocirc;˘&cent;y˛&Ugrave;&ordm;&oacute;ˇ&oslash;&Uuml;ˇ46&aacute;ˇe&Omega;,ˇ&cent;lˇ%ˇ&ntilde;&trade;ﬂﬂ~&Iuml;ˇ&eacute;&Otilde;˘&oslash;q˙R&Uacute;&igrave;&permil;&aring;ﬁ˘;I&raquo;&mdash;&egrave;&Igrave;U&eacute;&ordm;&oslash;&not;?&ordm;&Oslash;&Ntilde;&copy;'&bdquo;&frasl;|&euro;&mdash;OJ&Igrave;O	&yen;˚:&bdquo;ˇ</p>
+  </div> <!-- encrypted -->
+  
+  <div id="openedfile4" class="window hidden openedfile">
+    <div class="topbar"><span class="close">
+      <i class="fa fa-window-minimize" aria-hidden="true"></i>    
+      <i class="fa fa-window-restore" aria-hidden="true"></i>    
+      <i class="fa fa-close" aria-hidden="false"></i></span></div>
+    
+    content
+  </div> <!-- after first day -->
+  
+  <div id="openedfile5" class="window hidden openedfile">
+    <div class="topbar"><span class="close">
+      <i class="fa fa-window-minimize" aria-hidden="true"></i>    
+      <i class="fa fa-window-restore" aria-hidden="true"></i>    
+      <i class="fa fa-close" aria-hidden="false"></i></span></div>
+    
+    content
+  </div> <!-- found glitch -->
+  
+  <div id="window2" class="window two hidden">
+    <div class="topbar"><span class="close">
+      <i class="fa fa-window-minimize" aria-hidden="true"></i>    
+      <i class="fa fa-window-restore" aria-hidden="true"></i>    
+      <i class="fa fa-close" aria-hidden="false"></i></span></div>
+    
+    <div class="maillist">
+      <table>
+        <tr>
+          <th> </th>
+          <th>From:</th>
+          <th>Object:</th>
+          <th>Date:</th>
+        </tr>
+      <tr id="mail1" class="unread">
+        <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
+        <td>&lt;jpt4719@subnet.com&gt;</td>
+        <td>nice work, but …</td>
+        <td>05/25/2065 at 01:46am</td>
+      </tr>
+      <tr id="mail2" class="unread">
+        <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
+        <td>&lt;jr186dc@novanetwork.com&gt;</td>
+        <td>"Order #543367"</td>
+        <td>05/24/2065 at 11:22pm</td>
+      </tr>
+      <tr id="mail3">
+        <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
+        <td>&lt;donotanswer@novacorp.com&gt;</td>
+        <td>"LATEST IMPLANT UPDATE! DO NOT MISS OUT!"</td>
+        <td>05/20/2065 at 10:01am</td>
+      </tr>
+      <tr id="mail4" class="unread">
+        <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
+        <td>&lt;newsletter@sanitycheck.com&gt;</td>
+        <td>"Take care of your Sanity®!"</td>
+        <td>05/14/2065 at 02:37am</td>
+      </tr>
+        <tr id="mail5">
+        <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
+        <td>&lt;kal-ol20002@novanetwork.com&gt;</td>
+        <td>"REQUEST FOR ASSITANCE - STRICLY CONFIDENTIAL!"</td>
+        <td>05/13/2065 at 05:37pm</td>
+      </tr>
+      </table>
+    </div>
+    <div class="mailcontent">
+      <div id="content1" class="email hidden">
+        <b>From:</b> &lt;jpt4719@subnet.com&gt; <br/>
+        <b>Object:</b> nice work, but … <br/>
+        <b>Date:</b> 05/25/2065 at 01:46am <br/>
+
+        <p><b>Content:</b><br/>
+hey.<br/>
+i saw what you did and i also know what you saw.<br/><br/>
+
+also excuse the whole hacking thing but i had to infect your computer to know if we could trust you, and we can, or i hope so. otherwise …<br/><br/>
+
+anyway if you could just chat with me i have some information you would like, my username is: <strong>jpt47.rev19#drknt</strong> also if you refuse i am pretty sure your employer would love to know about that side business of yours. <br/><br/>
+
+see ya.</p>
+      </div>
+      <div id="content2" class="email hidden">
+        <b>From:</b> &lt;jr186dc@novanetwork.com&gt; <br/>
+        <b>Object:</b> Order #543367 <br/>
+        <b>Date:</b> 05/24/2065 at 11:22pm <br/>
+
+        <p><b>Content:</b><br/>
+Hey Sal!<br/><br/>
+I was wondering if you could tweak my dream a little more. I still had ads from DreamCast™ in the middle of it when you advertised me that the dreams you create are one hundred percent of their network. Also I am not sure if something is up with my new girlfriend. Her eyes kept changing colors and she sounded less natural than the last one. Maybe go back to the previous model?<br/><br/>
+        Thanks for your time,<br/>
+        JR.</p>
+      </div>
+      <div id="content3" class="email visible">
+        <b>From:</b> &lt;donotanswer@novacorp.com&gt;<br/>
+        <b>Object:</b> LATEST IMPLANT UPDATE! DO NOT MISS OUT!<br/>
+        <b>Date:</b> 05/20/2065 at 10:01am
+
+        <p><b>Content:</b><br/>
+Hi there, dear customer!<br/>
+Our team of devoted developers has been working on this update for you implant for months now and it is finally out! Please contact your closest Nova Corp. Office for a free trial (for the complete installation price please consult with your local office as regional taxes can apply. You can also only download the latest security update for free by plugging yourself in to your computer or a DreamCast™ station, but why deprive yourself of a better life experience by bypassing these new features.<br/><br/>
+Updates included (but are not limited to):<br/>
+	• New Memory Sorting menu.<br/>
+	• Ability to mute disreputable citizens based on their Crime Coefficient. <br/>
+        • And a lot more to discover …</p>
+
+      </div>
+      <div id="content4" class="email hidden">
+        <b>From:</b> &lt;newsletter@sanitycheck.com&gt;<br/>
+        <b>Object:</b> Take care of your Sanity®!<br/>
+        <b>Date:</b> 05/14/2065 at 02:37am
+
+        <p><b>Content:</b><br/>
+Are you stressed about finals? About your next promotion?<br/>
+Is your Crime Coefficient™ too high?<br/><br/>
+Sign up for our new and improved therapy sessions. Come in our office for 15 minutes a day and we’ll update your implant with our special secret algorithm to get your Sanity® back.<br/>
+Don’t wait to get arrested and transfer to a latent criminal facility!<br/><br/>
+          Sign up today to stay sane!</p>
+      </div>
+      <div id="content5" class="email hidden">
+        <b>From:</b> &lt;kal-ol20002@novanetwork.com&gt;<br/>
+        <b>Object:</b> REQUEST FOR ASSITANCE - STRICLY CONFIDENTIAL!<br/>
+        <b>Date:</b> 05/13/2065 at 05:37pm 
+
+        <p><b>Content:</b><br/>
+Before I proceed, I ask you to apologize for I send this email unsolicited. I am the son of a prominent business man here in Nicaragua. He was unfortunately killed a few days ago by rebels who decided to invaded the house. But before that happened I managed to escape here to Spain so that I could manage his investments.<br/><br/>
+Before he died my father asked me to move the money out of the country into the united states of the americas. I told my lawyers about it and they said I need a person worth of trust. You would get 10% of the total amount of money you would help me move. For this business arrangements to work you would need to send me 10,000$ to start the transfers. Contact me soon to detail on the arrangement.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="window3" class="window three hidden">
+    <div class="topbar"><span class="close">
+      <i class="fa fa-window-minimize" aria-hidden="true"></i>    
+      <i class="fa fa-window-restore" aria-hidden="true"></i>    
+      <i class="fa fa-close" aria-hidden="false"></i></span></div>
+    
+    <div class="chat">
+      <label class="askstart">Who do you want to talk to?</label>
+      <input type="text" id="code" />
+      <div class="start">Start Conversation</div>
+
+      <div id="message1" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box1"></span>
+      </div>
+
+      <div id="answer1" class="answer hidden">
+        <span class="choices"><a href="#" id="option1a"></a>
+          <a href="#" id="option1b"></a></span>
+        <span class="typeit-answer1"></span>
+      </div>
+
+      <div id="message2" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box2"></span>
+      </div>
+      
+      <div id="answer2" class="answer hidden">
+        <span class="choices"><a href="#" id="option2a"></a>
+          <a href="#" id="option2b"></a></span>
+        <span class="typeit-answer2"></span>
+      </div>
+      
+      <div id="message3" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box3"></span>
+      </div>
+      
+      <div id="message4" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box4"></span>
+      </div>
+      
+      <div id="answer3" class="answer hidden">
+        <span class="choices"><a href="#" id="option3"></a></span>
+        <span class="typeit-answer3"></span>
+      </div>
+      
+      <div id="message5" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box5"></span>
+      </div>
+      
+      <div id="answer4" class="answer hidden">
+        <span class="choices"><a href="#" id="option4"></a></span>
+        <span class="typeit-answer4"></span>
+      </div>
+      
+      <div id="message6" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box6"></span>
+      </div>
+      
+      <div id="answer5" class="answer hidden">
+        <span class="choices"><a href="#" id="option5"></a></span>
+        <span class="typeit-answer5"></span>
+      </div>
+
+<div id="message7" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box7"></span>
+      </div>
+      
+      <div id="answer6" class="answer hidden">
+        <span class="choices"><a href="#" id="option6"></a></span>
+        <span class="typeit-answer6"></span>
+      </div>
+
+<div id="message8" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box8"></span>
+      </div>
+      
+      <div id="answer7" class="answer hidden">
+        <span class="choices"><a href="#" id="option7"></a></span>
+        <span class="typeit-answer7"></span>
+      </div>
+
+<div id="message9" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box9"></span>
+      </div>
+      
+      <div id="answer8" class="answer hidden">
+        <span class="choices"><a href="#" id="option8"></a></span>
+        <span class="typeit-answer8"></span>
+      </div>
+
+<div id="message10" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box10"></span>
+      </div>
+      
+      <div id="answer9" class="answer hidden">
+        <span class="choices"><a href="#" id="option9"></a></span>
+        <span class="typeit-answer9"></span>
+      </div>
+
+<div id="message11" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box11"></span>
+      </div>
+      
+      <div id="answer10" class="answer hidden">
+        <span class="choices"><a href="#" id="option10"></a></span>
+        <span class="typeit-answer10"></span>
+      </div>
+
+<div id="message12" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box12"></span>
+      </div>
+      
+      <div id="answer11" class="answer hidden">
+        <span class="choices"><a href="#" id="option11"></a></span>
+        <span class="typeit-answer11"></span>
+      </div>
+
+<div id="message13" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box13"></span>
+      </div>
+      
+      <div id="answer12" class="answer hidden">
+        <span class="choices"><a href="#" id="option12"></a></span>
+        <span class="typeit-answer12"></span>
+      </div>
+
+<div id="message14" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box14"></span>
+      </div>
+      
+      <div id="answer13" class="answer hidden">
+        <span class="choices"><a href="#" id="option13"></a></span>
+        <span class="typeit-answer13"></span>
+      </div>
+
+<div id="message15" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box15"></span>
+      </div>
+      
+      <div id="answer14" class="answer hidden">
+        <span class="choices"><a href="#" id="option14"></a></span>
+        <span class="typeit-answer14"></span>
+      </div>
+
+<div id="message16" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box16"></span>
+      </div>
+      
+      <div id="answer15" class="answer hidden">
+        <span class="choices"><a href="#" id="option15"></a></span>
+        <span class="typeit-answer15"></span>
+      </div>
+
+<div id="message17" class="message hidden">
+        <strong>Jupiter47: </strong>
+        <span class="typeit-box17"></span>
+      </div>
+      
+      <div class="end hidden">Conversation ended</div>
+      <div class="restart hidden">Restart?</div>
+
+    </div>
+
+  </div>
+  
+  <nav>
+    <h3>navigation</h3>
+    <a href="#" id="link1" class="open hiddentext"><i class="fa fa-folder-open" aria-hidden="true"></i> files</a>
+    <a href="#" id="link2" class="open hiddentext"><i class="fa fa-envelope" aria-hidden="true"></i> mails</a>
+    <a href="#" id="link3" class="open hiddentext"><i class="fa fa-comments" aria-hidden="true"></i> chat</a>
+  </nav>
+</section>
+  
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.0.1/typeit.js" type="text/javascript"></script>
+	  <script src="script.js" type="text/javascript"></script>
+  
+  </body>
+  
+</html>

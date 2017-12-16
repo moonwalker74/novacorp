@@ -127,7 +127,7 @@ $('.closewelcome').click(function() {
 var sender1 = new Object();
 sender1.name = "Jupiter47";
 sender1.message1 = "uh .. you actually contacted me.";
-sender1.message2 = "let's forget about that. the important thing is i know what you can do and we can help each other if you join us, fight for the cause.";
+sender1.message2 = "who cares? the important thing is i know what you can do and we can help each other if you join us, fight for the cause.";
 sender1.message3a = "not very talkative, uh?";
 sender1.message3b = "these are all important questions, and we'll get to it..";
 sender1.message4 = "first can you make sure you're alone? that no one is watching us?";

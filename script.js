@@ -75,7 +75,7 @@ $("#files .file").click(function() {
 
 $('#file3').one( "click", function() {
     $('img.glitch').removeClass("hidden");
-    $('img.glitch').toggle("pulsate",800); 
+    $('img.glitch').toggle("pulsate",500); 
     return false;
 });
 

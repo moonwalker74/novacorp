@@ -1026,7 +1026,5 @@ function startchat() {
                           
 // START THE CHAT AFTER CLICKING ON BUTTON
 $('.start').click(function() {
-  $('.start').addClass('hidden');
-  $('#message1').removeClass('hidden');
   startchat();
 });

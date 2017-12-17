@@ -17,6 +17,9 @@ Video Game + Interactive Fiction + Digital Novel = NovaCorp (ENGL 502 Final Proj
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I want to explore the adolescent view of the real versus the virtual because nowadays the virtual, with social media and other platforms, has taken a big part in the life of adolescents. I think that by using science fiction to explore a world where technology is running society it can be a really good way to get young adults to understand that while sometimes technology can be harming and be taken too far, it can also be used as a tool to defend yourself against an abusing authority. I also want to explore the rebellion of teenagers against a major authority figure like the government because it is often thought that adolescents are not supposed to be leaders especially in terms of rebellion against the government, expect when it comes to young adult dystopian literature. It is important to me to tell that story by the way of an interactive novel, through a digital media because I believe that adolescents who do not like to read can be introduced to more literature by presenting to them something that looked more like a video game than a book. I also believe that traditional literature should not be kept classic and that there is not a better target audience for this new type of story-telling than the adolescents who are themselves so fluent in new media. I think it can be a great way to get more young adult interested into reading but this new type of media can also bring adolescent who already like reading to a new way of discovering stories.
 
 ## Release History
+* 1.0.0
+    * ADD: All narrative content.
+    * v1.0 Aplha Release
 * 0.3.0
     * ADD: 90% of the written content.
 * 0.2.0

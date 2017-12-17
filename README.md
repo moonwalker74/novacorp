@@ -32,6 +32,10 @@ Video Game + Interactive Fiction + Digital Novel = NovaCorp (ENGL 502 Final Proj
 * Solving puzzles in order to acces certain parts of the story.
 * Game Saving System to never have to start from the beginning again.
 
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+
 ## Author
 
 Marine Bernard – [@marinebsdsu](https://twitter.com/marinebsdsu) – mbernard2@sdsu.edu

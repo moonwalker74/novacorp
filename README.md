@@ -1,5 +1,6 @@
 # NovaCorp
-Video Game + Interactive Fiction + Digital Novel = NovaCorp (ENGL 502 Final Project)
+When Video Game meets Dystopia YA Novel = NovaCorp (ENGL 502 Final Project)
+Play here: https://moonwalker74.github.io/novacorp/
 
 ## Synopsis
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What if you did not have to wonder what to eat for dinner tonight? What if you never had to choose what to listen to or what to watch ever again? What if you could experience again all of your memories? What if you could get updated to the cloud after your death? What if you could visit your deceased loved ones during your dreams? What if there was something that could make your life so much easier, like an app? But what if this app was implanted directly into your brain?

@@ -82,7 +82,7 @@ $('#file3').one( "click", function() {
 // open corresponding email
 $( ".maillist table tr:not(:first-child)" ).click(function() {
     if ($(this).hasClass("unread")) {
-      $('i.fa').removeClass("fa-envelope").addClass("fa-envelope-open")
+      $(this).find("i.fa.fa-envelope").removeClass("fa-envelope").addClass("fa-envelope-open")
       $(this).removeClass("unread");
     }
       var mailid = $(this).attr('id');

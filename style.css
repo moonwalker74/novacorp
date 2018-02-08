@@ -43,7 +43,6 @@ section {
 /* title slippting in two */
 #page1 .title {
   display: block;
-  vertical-align: middle;
   margin-top: 10%;
 }
 

@@ -76,6 +76,7 @@ $("#files .file").click(function() {
 $('#file3').one( "click", function() {
     $('img.glitch').removeClass("hidden");
     $('img.glitch').toggle("pulsate",500); 
+    $('#file6').parent().removeClass("hidden");
     return false;
 });
 
@@ -193,11 +194,12 @@ $('.restart').click(function() {
     $("#option14").append(sender2.answer14);
     $("#option15").append(sender2.answer15);
   
+var typeSpeed = 100;
 
 // SHOW MESSAGE 1
 function showmessage1() {
   new TypeIt('.typeit-box1', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -227,7 +229,7 @@ function showoption1a() {
   $('#option1a').click(function() {
      $("#answer1 .choices").addClass("hidden");
      new TypeIt('.typeit-answer1', {
-         speed: 100,
+         speed: typeSpeed,
          lifeLike: true,
          autoStart: false
      })
@@ -250,7 +252,7 @@ function showoption1b() {
   $('#option1b').click(function() {
                     $("#answer1 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer1', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -270,7 +272,7 @@ function showoption1b() {
 // SHOW MESSAGE 2
 function showmessage2() {
   new TypeIt(".typeit-box2", {
-    speed: 100,
+    speed: typeSpeed,
     lifeLike: true,
     autoStart: false
   })
@@ -298,7 +300,7 @@ function showoption2a() {
   $('#option2a').click(function() {
      $("#answer2 .choices").addClass("hidden");
      new TypeIt('.typeit-answer2', {
-         speed: 100,
+         speed: typeSpeed,
          lifeLike: true,
          autoStart: false
      })
@@ -321,7 +323,7 @@ function showoption2b() {
   $("#option2b").click(function() {
     $("#answer2 .choices").addClass("hidden");
     new TypeIt(".typeit-answer2", {
-      speed: 100,
+      speed: typeSpeed,
       lifeLike: true,
       autoStart: false
     })
@@ -342,7 +344,7 @@ function showoption2b() {
 // SHOW MESSAGE 3a
 function showmessage3a() {
   new TypeIt(".typeit-box3", {
-    speed: 100,
+    speed: typeSpeed,
     lifeLike: true,
     autoStart: false
   })
@@ -364,7 +366,7 @@ function showmessage3a() {
 // SHOW MESSAGE 3a
 function showmessage3b() {
   new TypeIt(".typeit-box3", {
-    speed: 100,
+    speed: typeSpeed,
     lifeLike: true,
     autoStart: false
   })
@@ -386,7 +388,7 @@ function showmessage3b() {
 // SHOW MESSAGE 4
 function showmessage4() {
   new TypeIt('.typeit-box4', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -413,7 +415,7 @@ function showanswer3() {
   $('#option3').click(function() {
                     $("#answer3 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer3', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -432,7 +434,7 @@ function showanswer3() {
 
 function showmessage5() {
   new TypeIt('.typeit-box5', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -459,7 +461,7 @@ function showanswer4() {
   $('#option4').click(function() {
                     $("#answer4 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer4', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -478,7 +480,7 @@ function showanswer4() {
 
 function showmessage6() {
   new TypeIt('.typeit-box6', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -505,7 +507,7 @@ function showanswer5() {
   $('#option5').click(function() {
                     $("#answer5 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer5', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -524,7 +526,7 @@ function showanswer5() {
 
 function showmessage7() {
   new TypeIt('.typeit-box7', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -551,7 +553,7 @@ function showanswer6() {
   $('#option6').click(function() {
                     $("#answer6 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer6', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -570,7 +572,7 @@ function showanswer6() {
 
 function showmessage8() {
   new TypeIt('.typeit-box8', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -597,7 +599,7 @@ function showanswer7() {
   $('#option7').click(function() {
                     $("#answer7 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer7', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -616,7 +618,7 @@ function showanswer7() {
 
 function showmessage9() {
   new TypeIt('.typeit-box9', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -643,7 +645,7 @@ function showanswer8() {
   $('#option8').click(function() {
                     $("#answer8 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer8', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -662,7 +664,7 @@ function showanswer8() {
 
 function showmessage10() {
   new TypeIt('.typeit-box10', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -689,7 +691,7 @@ function showanswer9() {
   $('#option9').click(function() {
                     $("#answer9 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer9', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -708,7 +710,7 @@ function showanswer9() {
 
 function showmessage11() {
   new TypeIt('.typeit-box11', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -735,7 +737,7 @@ function showanswer10() {
   $('#option10').click(function() {
                     $("#answer10 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer10', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -754,7 +756,7 @@ function showanswer10() {
 
 function showmessage12() {
   new TypeIt('.typeit-box12', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -781,7 +783,7 @@ function showanswer11() {
   $('#option11').click(function() {
                     $("#answer11 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer11', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -800,7 +802,7 @@ function showanswer11() {
 
 function showmessage13() {
   new TypeIt('.typeit-box13', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -827,7 +829,7 @@ function showanswer12() {
   $('#option12').click(function() {
                     $("#answer12 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer12', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -846,7 +848,7 @@ function showanswer12() {
 
 function showmessage14() {
   new TypeIt('.typeit-box14', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -873,7 +875,7 @@ function showanswer13() {
   $('#option13').click(function() {
                     $("#answer13 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer13', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -892,7 +894,7 @@ function showanswer13() {
 
 function showmessage15() {
   new TypeIt('.typeit-box15', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -919,7 +921,7 @@ function showanswer14() {
   $('#option14').click(function() {
                     $("#answer14 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer14', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -939,7 +941,7 @@ function showanswer14() {
 
 function showmessage16() {
   new TypeIt('.typeit-box16', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })
@@ -966,7 +968,7 @@ function showanswer15() {
   $('#option15').click(function() {
                     $("#answer15 .choices").addClass("hidden");
                     new TypeIt('.typeit-answer15', {
-                      speed: 100,
+                      speed: typeSpeed,
                       lifeLike: true,
                       autoStart: false
                     })
@@ -985,7 +987,7 @@ function showanswer15() {
 
 function showmessage17() {
   new TypeIt('.typeit-box17', {
-          speed: 100,
+          speed: typeSpeed,
           lifeLike: true,
           autoStart: false
         })

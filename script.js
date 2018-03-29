@@ -58,7 +58,7 @@ $('.taskmanager button').click(function() {
       $('#link3').removeClass("hiddentext");
       $('.taskmanager button').html("Done!");
       if ($('#task-1').hasClass("checked") && $('#task-2').hasClass("checked") && $('#task-3').hasClass("checked")) {
-      alert('You have finished episode 0. Please check back soon for new content.')
+      alert('You have reached the end of the first episode. Please check back soon to explore more of the story.')
       return false;
       }
     }

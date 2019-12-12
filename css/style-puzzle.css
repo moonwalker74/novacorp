@@ -1,0 +1,165 @@
+
+.game {
+  width: 500px;
+  height: 500px;
+  background: white;
+  display: table;
+  border-collapse: collapse;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.game > div {
+  display: table-row;
+}
+
+.game > div > div {
+  display: table-cell;
+  background: rgba(0,0,0,.1);
+  border: 20px solid white;
+}
+
+.on {
+  background: rgba(0,0,0,.9) !important;
+}
+
+body {
+    background-color: rgb(110, 110, 110);
+}
+
+section#page1{
+    background:  rgb(70, 70, 70);
+}
+
+.message {
+    margin: auto;
+    width: 200px;
+    background: white;
+    position: fixed;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin: -100px auto auto -100px;
+    transform: scale(0);
+    padding: 20px;
+    font-family: "Share Tech Mono";
+    color: black;
+    text-align: center;
+}
+
+.message button {
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    border: 0px;
+    background: #1f2122;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#page1 p.instruction {
+  position: fixed;
+  top: 7%;
+  text-align: center;
+  width: 100vw;
+  color: white;
+}
+
+img {
+    width: 300px;
+    display: block;
+    float: left;
+    margin: -20px 30px 10px -10px;
+}
+
+.memo {
+  width: 750px;
+  height: 480px;
+  background: white;
+  margin: auto;
+  opacity: 0;
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.2);
+  font-family: "Share Tech Mono";
+  color: #1f2122;
+  padding: 15px;
+  position: relative;
+  transform: rotate(-1deg);
+  z-index: 2;
+}
+
+#memo2 {
+  transform: rotate(1deg) translate(0px, -500px);
+  position: relative;
+  height: 480px;
+  z-index: 1;
+  width: 700px;
+}
+
+#page1 .memo p {
+  text-align: left;
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+#page1 .memo p.classified {
+  text-align: left;
+  margin: 0;
+  width: 100%;
+  padding-top: 15px;
+}
+
+#page1 #memo2 p.classified {
+  text-align: left;
+  margin: 0;
+  width: 100%;
+  padding-top: 45px;
+  line-height: 1.2em;
+}
+
+#memo2 p {
+  line-height: 1.6em;
+}
+
+#page1 #memo2 p.classified img {
+  margin-top: -45px;
+}
+
+#page1 .memo p span {
+  display: block;
+}
+
+.redacted {
+  border: 5px solid rgb(145, 0, 0);
+  border-radius: 10px;
+  font-size: 7em;
+  width: auto;
+  display: inline-block;
+  opacity: 0.5;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: 35%;
+  color: rgb(145, 0, 0);
+  left: 10%;
+  z-index: 100;
+}
+
+.nextfile, .continue {
+ font-size: 1.7em; 
+ font-family: 'Share Tech Mono';
+ margin: auto;
+ margin-top: -450px;
+ cursor: pointer;
+ width: 100%;
+ position: fixed;
+  text-align: center;
+}
+
+.continue {
+  position: fixed;
+  bottom: 2%;
+  text-align: center;
+}
+

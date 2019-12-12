@@ -1,0 +1,174 @@
+body {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+}
+
+/* copyright footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  background: rgba(255,255,255,.1);
+  width: 100vw;
+  text-align: center;
+  font-family: Trebuchet MS;
+  font-size: .8em;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: fixed;
+}
+
+/* title page */
+#page1 {
+  z-index: 1000;
+  background: black;
+  padding-top: 100px;
+}
+
+/* title slippting in two */
+#page1 .title {
+  display: block;
+  margin-top: 7%;
+}
+
+#page1 h1 {
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: 'Unica One';
+  font-size: 200px;
+  line-height: 200px;
+  transition: all 0.4s ease-in-out;
+}
+
+#page1 h2:hover {
+  cursor: pointer;
+}
+
+#page1 h1.top, #page1 h1.bottom{
+  overflow: hidden;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+}
+
+#page1 h1.bottom span {
+  display: block;
+  margin-top: -100px;
+} 
+
+#page1 h1.mid span, #page1 h1.mid {
+  display: block;
+  width: 100vw;
+  text-align: center;
+  margin: auto;
+} 
+
+#page1 .title:hover h1.top:first-child {
+	transform: translateY(-25px);
+	opacity: 0.7;
+}
+
+#page1 .title:hover .bottom:last-child {
+	transform: translateY(25px);
+	opacity: 0.7;
+}
+
+#page1 h2.mid {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'VT323';
+  text-transform: lowercase;
+  font-size: 50px;
+	letter-spacing: 30px;
+	line-height: 10px;
+	position: absolute;
+  width: 100%;
+  opacity: 0;
+	transform: scale(0.5);
+	transition: all 0.4s ease-in-out 0s;
+}
+
+#page1 .title:hover .mid {
+	transition-delay: 0.3s;
+	opacity: 1;
+  margin-top: -10px;
+	transform: scale(1);
+}
+
+/* synopsis and instruction on front page */
+#page1 p {
+  margin: 20px auto;
+  text-align: center;
+  width: 30vw;
+  font-family: 'Share Tech Mono';
+  font-size: 1em;
+}
+
+#page1.prologue p{
+  font-size: 1.5em;
+  text-align: justify;
+  width: 50vw;
+  text-indent: 3em;
+}
+
+#page1 p:first-of-type, #page1 p.links {
+  margin: 50px auto 0px auto;
+}
+
+#page1 p.links, #page1 p.link {
+  font-size: 1em;
+  width: fit-content;
+  font-family: 'Russo One';
+}
+
+a {color: white;text-decoration: none;}
+
+#page1.prologue a{
+  font-style: italic;
+  font-size: 1.3em;
+  border-bottom: 2px white dashed;
+  display: inline-block;
+  text-indent: 0;
+}
+
+#page1.prologue p.links, #page1.prologue p.link {
+  text-align: right;
+  width: 50vw;
+}
+
+#page1 a:hover {
+  color: rgba(229, 229, 229, 1);
+}
+
+#page1.prologue a:hover{
+ text-shadow: 2px 2px 0 rgb(143, 143, 143);
+ color: white;
+}
+
+/* actual game page */
+#page2 {
+  z-index: 500;
+  background: rgba(0,0,0,.1);
+}
+
+#page2 h1 {
+  color: black;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,6 +1,4 @@
 # NovaCorp
-When Video Game meets Dystopia YA Novel = NovaCorp (ENGL 502 Final Project)
-
 Play here: https://moonwalker74.github.io/novacorp/
 
 ## Synopsis
@@ -19,6 +17,10 @@ Play here: https://moonwalker74.github.io/novacorp/
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I want to explore the adolescent view of the real versus the virtual because nowadays the virtual, with social media and other platforms, has taken a big part in the life of adolescents. I think that by using science fiction to explore a world where technology is running society it can be a really good way to get young adults to understand that while sometimes technology can be harming and be taken too far, it can also be used as a tool to defend yourself against an abusing authority. I also want to explore the rebellion of teenagers against a major authority figure like the government because it is often thought that adolescents are not supposed to be leaders especially in terms of rebellion against the government, expect when it comes to young adult dystopian literature. It is important to me to tell that story by the way of an interactive novel, through a digital media because I believe that adolescents who do not like to read can be introduced to more literature by presenting to them something that looked more like a video game than a book. I also believe that traditional literature should not be kept classic and that there is not a better target audience for this new type of story-telling than the adolescents who are themselves so fluent in new media. I think it can be a great way to get more young adult interested into reading but this new type of media can also bring adolescent who already like reading to a new way of discovering stories.
 
 ## Release History
+* 2.0
+    * ADD: Prologue part + Endings.
+    * EDIT: Changed the chat conversation + the writing of 1st episode.
+    * v2.0 Release
 * 1.1.0
     * EDIT: Correction of all typos.
     * ADD: Link to twitter on footer (first page).
@@ -38,12 +40,14 @@ Play here: https://moonwalker74.github.io/novacorp/
     
 ## Future Features to be added
 
-* Multiple choices in chat conversation leading to different outcomes.
-* Solving puzzles in order to acces certain parts of the story.
-* Game Saving System to never have to start from the beginning again.
+* TBD
 
 ## Credits
-Thanks to [Alex MacArthur](https://github.com/alexmacarthur) for [TypeIt](https://github.com/alexmacarthur/typeit).
+The chat conversation was written in [INK](https://www.inklestudios.com/ink)
+
+## Awards
+Honorable Mention at SDSU Electronic Competition Spring 2018.
+Showcased at WordPlay 2018 (One Day Festival in Toronto Celebrating Narrative Games)
 
 ## License
 
@@ -51,4 +55,4 @@ Thanks to [Alex MacArthur](https://github.com/alexmacarthur) for [TypeIt](https:
 
 ## Author
 
-Marine Bernard – [@marinebsdsu](https://twitter.com/marinebsdsu) – mbernard2@sdsu.edu
+Marine Bernard – [@marinebrnrd7](https://twitter.com/marinebrnrd7) – marine.bernard7@gmail.com

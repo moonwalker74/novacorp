@@ -1,0 +1,605 @@
+body {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: fixed;
+}
+
+.fa {
+  font-weight: 100;
+}
+ /* main component to hide and show content */
+.hidden {
+  display: none !important;
+}
+
+.hiddentext {
+  color: rgba(255,255,255,.3) !important;
+}
+
+/* actual game page */
+#page2 {
+  z-index: 500;
+  background: rgba(0,0,0,.1);
+}
+
+#page2 h1 {
+  color: black;
+}
+
+/* taskmanager */
+.taskmanager {
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  top:0;
+  left: 0;
+  padding: 25px;
+  padding-left: 50px;
+  transform: scale(.7);
+  transform-origin: 0% 0%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.taskmanager h4 {
+  font-family: "Share Tech Mono";
+  margin: 0px 0 15px -20px;
+  font-size: 1em;
+}
+
+.taskmanager button {
+  border-radius: 0;
+  color: black;
+  background: white;
+  border: 0;
+  padding: 5px 10px;
+  font-family: "Share Tech Mono";
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.taskmanager button:hover {
+  text-decoration: underline;
+}
+
+.taskmanager button:active {
+  font-size: .7em;
+  box-shadow: none;
+  transform: scale(.9)
+}
+
+/* customized checkboxes */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Share Tech Mono";
+}
+
+/* hide browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* create  custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* when checkbox is checked */
+.checked .checkmark {
+  background-color: #333;
+}
+
+/* create checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* show checkmark when checked */
+.checked .checkmark:after {
+  display: block;
+}
+
+/* style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* draggable windows */
+.window {
+  background: white;
+  border: 1px solid black;
+  border-top: 15px solid black;
+  color: black;
+  padding: 5px;
+}
+
+.topbar {
+  cursor: move;
+  height: 15px;
+  position: relative;
+  top: -15px;
+  width: 100%;
+}
+/* top bar with closing icon */
+.close {
+  position: absolute;
+  right: 2px;
+  top: 0;
+  color: white;
+  font-size: 13px;
+  cursor: move;
+}
+
+.close i { padding-left: 4px;}
+
+.fa-window-minimize {
+  font-size: 8px;
+  top: -2px;
+  position: relative;
+}
+
+.fa-window-restore {
+  font-size: 11px;
+  top: 0px;
+  position: relative;
+}
+
+.close .fa-times {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+/* style for list of files */
+#page2 .window.one {
+  width: 500px;
+  height: 250px;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  z-index: 100;
+  padding: 0;
+}
+
+/* table of files */
+#files {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Share Tech Mono';
+  margin-top: -15px;
+}
+
+#files td {
+  border: 1px dashed rgba(0,0,0,.8);
+  padding: 3px;
+  font-size: 1em;
+  padding-left: 10px;
+}
+
+#files tr:first-child td {
+  padding: 0;
+  height: 20px;
+  font-size: .9em;
+  padding-left: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+#files tr:not(:first-child) td:not(:first-child) {
+  text-align: right;
+  padding-right: 10px;
+}
+
+#files tr:not(:first-child) td:first-child:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#files tr:first-child td {
+  border-style: solid; border-top: none;
+}
+#files tr:first-child td:first-child {border-left: none;}
+#files tr:first-child td:last-child {border-right: none;}
+
+#files tr:last-child td {border-bottom: none;}
+#files td:first-child {border-left: none;}
+#files td:last-child {border-right: none;}
+
+/* style for opened files */
+#page2 .window.openedfile {
+  width: 500px;
+  max-height: 50vh;
+  position: absolute;
+  z-index: 100;
+  padding: 0;
+}
+
+/* text in opened file */
+#page2 .window.openedfile p {
+  max-height: inherit;
+  font-family: 'Share Tech Mono';
+  overflow: scroll;
+  font-size: 1em;
+  margin-top: 0;
+  position: relative;
+  bottom: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+#page2 .window.openedfile p span {
+  display: block;
+  font-family: 'Share Tech Mono';
+  padding: 0;
+  font-size: 1em;
+  margin: 5px auto;
+}
+
+/* glitch when encrypted file is open */
+img.glitch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9000;
+}
+
+#openedfile1 {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+
+#openedfile2 {
+  position: absolute;
+  top: 13%;
+  left: 26%;
+}
+
+#openedfile2 p span {
+  line-height: 1.7em;
+  padding-left: 1em !important;
+}
+
+#openedfile3 {
+  position: absolute;
+  top: 16%;
+  left: 27%;
+}
+
+#openedfile4 {
+  position: absolute;
+  top: 19%;
+  left: 28%;
+}
+
+#openedfile5 {
+  position: absolute;
+  top: 21%;
+  left: 29%;
+}
+
+#openedfile6 {
+  position: absolute;
+  top: 24%;
+  left: 30%;
+}
+
+
+/* style for mails */
+#page2 .window.two {
+  height: 600px;
+  width: 900px;
+  position: relative;
+  top: 15%;
+  left: 28%;
+  z-index: 100;
+  padding: 0;
+}
+
+/* upper section: list of mails */
+.maillist {
+  background: rgba(0,0,0,.2);
+  width: 100%;
+  height: 250px;
+  overflow-y: scroll;
+  margin-top: -15px;
+}
+
+.maillist table {
+  border-collapse: collapse;
+  border-style: hidden;
+  width: 100%;
+  font-family: "Share Tech Mono";
+}
+
+.maillist table td, .maillist table th {
+  border-bottom: 1px dashed black;
+  text-align: left;
+}
+
+
+.maillist table tr:first-child {
+  height: 20px !important;
+}
+
+.maillist table tr:not(:first-child) {
+  height: 45px !important;
+  cursor: pointer;
+  padding: 3px 0 3px 2px;
+}
+
+.maillist table tr td:first-child {
+  width: 20px;
+  color: rgba(0,0,0,.7);
+  padding: 5px;
+}
+
+.maillist table tr:not(:first-child) td {
+  padding: 3px 0 3px 5px;
+}
+
+.maillist table tr:not(:first-child) td:hover {
+  text-decoration: underline;
+}
+
+.maillist table th {
+  background: rgba(255,255,255,.5);
+}
+
+.maillist .fa {
+  font-weight: 900;
+}
+
+tr.unread {
+  background: rgba(255,255,255,.7);
+}
+
+/* content of the emails */
+.mailcontent {
+  background: rgba(0, 0, 0, .1);
+  width: 100%;
+  height: calc(100% - 250px);
+   overflow: scroll;
+}
+
+.mailcontent .email {
+  z-index: 1;
+  padding: 25px;
+  overflow: scroll;
+  font-family: "Share Tech Mono";
+}
+
+span.opensesame {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* style for chat window */
+.window.three {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  z-index: 100;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* choices in chat conversation */
+.choices a {
+  display: block;
+  padding-bottom: 5px;
+  font-family: 'Share Tech Mono';
+  color: black;
+}
+
+.choices a:hover { text-decoration: underline;}
+
+/* code to enter the conversation */
+#code {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid black;
+  padding: 5px;
+  background: rgba(0,0,0,.05);
+  font-family: "Share Tech Mono";
+}
+
+.chat label {
+  font-family: 'Share Tech Mono';
+  display: block;
+  text-align: center;
+  margin: 10px auto 0 auto;
+}
+
+/* Box holding the whole chat */
+.chat {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Share Tech Mono';
+  overflow: scroll;
+  margin-top: -15px;
+}
+
+
+/* start button */
+.start, .restart, .error {
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  cursor: pointer;
+  font-family: 'Share Tech Mono';
+}
+
+.error {
+  color: #B73A3A;
+  cursor: initial;
+  font-size: 1em;
+  margin-top: 25px;
+}
+
+/* signal of the end */
+.end {
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  font-family: 'Share Tech Mono';
+}
+
+/* navigation bar (on the right) to reopen closed window */
+nav {
+  background: black;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 10px;
+  text-align: center;
+}
+
+a {color: white;text-decoration: none;}
+a:hover { color: #B73A3A}
+
+.hiddentext:hover {
+  color: white;
+  cursor: default;
+}
+
+nav a {
+  display: block;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: 'Share Tech Mono';
+}
+
+nav a i.fa {
+  display: block;
+}
+
+nav a {
+  border-bottom: 2px white solid;
+}
+
+nav a:last-of-type {
+ border: none;
+}
+
+nav h3 {
+  font-family: 'Russo One';
+  margin-top: 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* welcome box when beginning of the game */
+.welcome {
+  height: 500px;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  color: black;
+  box-shadow: 0px 0px 40px 3px rgba(0,0,0,0.4);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tempbg {
+  background: #1f2122;
+  opacity: .9;
+  width: 100wh;
+  height: 100vh;
+  z-index: 2000;
+  position: relative;
+}
+
+.welcome button {
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  border: 0px;
+  background: #1f2122;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.welcome h1,.welcome h2 {
+  margin: 0;
+  padding: 2px;
+  font-weight: normal;
+  letter-spacing: -2px;
+}
+
+.welcome h4 {
+  border-bottom: 1px dashed black;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2px;
+}
+
+.welcome p {
+  margin: 0px auto;
+  font-size: 14px;
+}
+
+.welcome {
+  font-family: "Share Tech Mono";
+}
+
+.welcome strong {
+  font-weight: normal;
+  color: #cc3737;
+}
+
